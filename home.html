@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo Pop Ads</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+      .card img {
+        transition: transform 0.3s;
+      }
+      .card:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png" alt="Logo Pop Ads" height="40"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#brands">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#property">Property Owners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#communities">Communities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-dark text-white text-center py-5" id="hero">
+      <div class="container">
+        <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">
+          Leaders of Interactive Advertising
+        </h1>
+        <p
+          class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          Transforming streets, malls & parking lots into powerful ad spaces.
+        </p>
+        <a
+          href="#brands"
+          class="btn btn-warning btn-lg mt-4 animate__animated animate__fadeInUp animate__delay-2s"
+        >
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2 class="fw-bold">Redefining Real-World Engagement</h2>
+            <p class="lead mt-3">
+              We don’t sell billboard space; we build interactive ecosystems
+              where every campaign is seen, scanned, shared, and remembered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience Segments -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h3 class="text-center fw-bold mb-4">
+          Designed for Everyone in the Loop
+        </h3>
+        <div class="row text-center g-4">
+          <div class="col-md-4" id="brands">
+            <div class="card h-100 shadow border-0" data-aos="fade-up">
+              <div class="card-body">
+                <img
+                  src="img/02A_BRANDS.jpg"
+                  height="150"
+                  class="mb-3"
+                  alt="Brands"
+                />
+                <h5 class="card-title">For Brands</h5>
+                <p class="card-text">
+                  Activate your audience through direct, data-driven
+                  interaction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" id="property">
+            <div
+              class="card h-100 shadow border-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card-body">
+                <img
+                  src="img/03A_PROPERTY_OWNERS.jpg"
+                  height="150"
+                  class="mb-3"
+                  alt="Property Owners"
+                />
+                <h5 class="card-title">For Property Owners</h5>
+                <p class="card-text">
+                  Earn passive income while supporting community upliftment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" id="communities">
+            <div
+              class="card h-100 shadow border-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card-body">
+                <img
+                  src="img/06A_PublicEducation.png"
+                  height="150"
+                  class="mb-3"
+                  alt="Communities"
+                />
+                <h5 class="card-title">For Communities</h5>
+                <p class="card-text">
+                  Benefit from investments into education, arts, and public
+                  space.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-warning text-dark text-center">
+      <div class="container">
+        <h4 class="mb-3">Ready to Pop Your Brand?</h4>
+        <a href="#contact" class="btn btn-dark btn-lg">Contact Us Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <small>&copy; 2025 LOGO POP ADS. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- AOS init -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
