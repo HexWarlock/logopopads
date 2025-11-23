@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacancies – Logo Pop Ads</title>
+
+    <!-- CSS Frameworks & Animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+      .section-img {
+        width: 100%;
+        max-height: 420px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #ffc107;
+        color: #000;
+        font-weight: 600;
+      }
+      .accordion-button::after {
+        filter: invert(1);
+      }
+      .role-heading {
+        font-weight: 700;
+      }
+      .vacancy-intro {
+        font-size: 1.05rem;
+      }
+      /* Remove Bootstrap's default arrow */
+      .custom-acc-btn::after {
+        display: none !important;
+      }
+
+      /* Layout for custom arrow + title */
+      .custom-acc-btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-left: 1.25rem;
+      }
+
+      /* Right arrow (collapsed) */
+      .custom-acc-btn .acc-arrow {
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 8px solid #000;
+        transition: transform 0.2s ease;
+      }
+
+      /* Down arrow (expanded) */
+      .custom-acc-btn:not(.collapsed) .acc-arrow {
+        transform: rotate(90deg);
+      }
+
+      /* Title styling */
+      .custom-acc-btn .acc-title {
+        font-weight: 600;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-dark">
+    <!-- NAVBAR -->
+    <div data-include="/navbar.html"></div>
+
+    <!-- HERO -->
+    <header class="bg-dark text-white py-5 text-center">
+      <div class="container">
+        <h1 class="display-5 fw-bold" data-aos="fade-down">Vacancies</h1>
+        <p class="lead mt-3" data-aos="fade-up">
+          Join the leaders of interactive advertising and help build South
+          Africa’s Smart-Property network.
+        </p>
+      </div>
+    </header>
+
+    <!-- INTRO + HERO IMAGE -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <!-- Heading row -->
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h3 class="fw-bold">Join Our Founding Team</h3>
+          </div>
+        </div>
+
+        <!-- Image + text row -->
+        <div class="row g-4 align-items-center">
+          <!-- Image column -->
+          <div
+            class="col-lg-6 order-lg-2 order-1 text-center"
+            data-aos="zoom-in-left"
+          >
+            <img
+              src="/img/Vacancies_01.webp"
+              alt="Logo Pop Ads Careers Team"
+              class="section-img"
+            />
+          </div>
+
+          <!-- Text column -->
+          <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right">
+            <p class="vacancy-intro">
+              At <strong>LOGO POP ADS</strong>, we are not merely changing how
+              brands advertise; we are transforming public spaces into smart,
+              data-driven engagement zones that forge unprecedented connections
+              between people, places, and brands.
+            </p>
+            <p class="vacancy-intro">
+              We are looking for dynamic, entrepreneurial professionals to join
+              our <strong>founding operational team</strong>. A lean,
+              results-oriented group responsible for driving growth, innovation,
+              and national impact. If you are self-motivated, disciplined, and
+              passionate about creating real change in the advertising industry,
+              this is your opportunity to grow with a brand that’s leading the
+              future.
+            </p>
+            <p class="vacancy-intro mb-2">
+              There is significant potential for accelerated career advancement
+              within our organization. Our robust growth trajectory is projected
+              to generate substantial new opportunities across various sectors,
+              encompassing both regional and national roles. As we solidify our
+              domestic market leadership and look toward future expansion into
+              international markets, we are committed to building a strong
+              foundational team to lead these exciting ventures.
+            </p>
+            <p class="vacancy-intro mb-0">
+              Following application submission, candidates will be provided with
+              detailed job-specific information via email. Selected candidates
+              will be invited for a formal interview or an appointment. Finally,
+              successful candidates will be issued employment contracts and
+              inducted into our training programme.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Career Opportunities -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <!-- Heading row -->
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="fw-bold">Available Career Opportunities</h2>
+          </div>
+        </div>
+
+        <!-- Image + text row -->
+        <div class="row g-4 align-items-center">
+          <!-- Image column -->
+          <div
+            class="col-lg-6 order-lg-1 order-1 text-center"
+            data-aos="zoom-in-right"
+          >
+            <img
+              src="/img/Vacancies_02.webp"
+              alt="Logo Pop Ads Installation Team"
+              class="section-img"
+            />
+          </div>
+
+          <!-- Text column -->
+          <div class="col-lg-6 order-lg-2 order-2" data-aos="fade-left">
+            <p class="vacancy-intro mb-3">
+              Each role within our organisation contributes directly to the
+              growth of our Smart-Property network and ensures that every
+              partner, brand, and property we work with receives world-class
+              service and measurable results.
+            </p>
+            <p class="vacancy-intro mb-0">
+              Explore the positions below, open any role to learn more, and
+              submit your application through the integrated forms when you’re
+              ready to take the next step.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Career Opportunities -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up">
+            <h2 class="fw-bold mb-4 text-center">
+              Available Career Opportunities
+            </h2>
+            <p class="lead">
+              Each role within our organisation contributes directly to the
+              growth of our Smart-Property network and ensures that every
+              partner, brand, and property we work with receives world-class
+              service and measurable results.
+            </p>
+            <p>
+              Explore the positions below, open any role to learn more, and
+              submit your application through the integrated forms when you’re
+              ready to take the next step.
+            </p>
+
+            <h3 class="fw-bold mt-5 mb-4 text-center">After You Apply</h3>
+            <p class="lead">
+              Once your application is received, our team will conduct a
+              thorough assessment of your profile. If your qualifications align
+              with our requirements, we will contact you to proceed to the next
+              stage.
+            </p>
+            <p>The subsequent steps may include:</p>
+            <ul class="fs-5 mt-4" role="list">
+              <li>✅ Screening Interviews: Phone or video interview.</li>
+              <li>
+                ✅ Skills Validation: In-person meeting or technical skills
+                assessment.
+              </li>
+              <li>✅ Portfolio Review: (Required for all creative roles).</li>
+              <li>
+                ✅ Site Familiarization: (Required for installation and
+                technical roles).
+              </li>
+            </ul>
+            <p>
+              Successful candidates will receive an official offer and
+              comprehensive onboarding support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VACANCY ACCORDION -->
+    <div class="accordion" id="vacanciesAccordion">
+      <!-- SALES TEAM -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSales">
+          <button
+            class="accordion-button custom-acc-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSales"
+            aria-expanded="false"
+            aria-controls="collapseSales"
+          >
+            <span class="acc-arrow"></span>
+            <span class="acc-title"
+              >Sales Team – Property & Brand Partnerships</span
+            >
+          </button>
+        </h2>
+
+        <div
+          id="collapseSales"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingSales"
+          data-bs-parent="#vacanciesAccordion"
+        >
+          <div class="accordion-body">
+            <!-- SALES ROLE CONTENT -->
+            <p class="role-heading">Role:</p>
+            <p>Build strong relationships, pitch, and close deals with:</p>
+            <ul>
+              <li>
+                Property owners (malls, office parks, hotels, and residential
+                complexes)
+              </li>
+              <li>Advertisers and brands (local and regional)</li>
+            </ul>
+
+            <p class="role-heading">Requirements:</p>
+            <ul>
+              <li>Excellent communication and presentation skills</li>
+              <li>
+                Strong understanding of retail, advertising, or media industries
+              </li>
+              <li>Confident negotiator with a results-first mindset</li>
+              <li>Self-motivated and able to operate independently</li>
+              <li>
+                Commission-based to start, with structured growth incentives
+              </li>
+            </ul>
+
+            <p class="role-heading">Impact:</p>
+            <p>
+              You’ll be the face of LOGO POP ADS, driving partnerships that
+              bring Smart-Property advertising to life across South Africa and
+              beyond.
+            </p>
+
+            <hr class="my-4" />
+
+            <h5 class="fw-bold mb-3">📝 Application Form – Sales Team</h5>
+
+            <!-- SALES FORM -->
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="62738014-82f0-47d6-9edb-7026f3c14de5"
+              />
+              <input
+                type="hidden"
+                name="email_to"
+                value="vacancies@logopopads.com"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Logo Pop Ads Careers – Website"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Application – Sales Team"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://logopopads.com/vacancies-thank-you.html"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="d-none"
+                style="display: none"
+              />
+
+              <div class="mb-3">
+                <label class="form-label">Full Names</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Full Names"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Surname</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Surname"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contact Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Contact Number"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Province</label>
+                <input type="text" class="form-control" name="Province" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" name="City" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Relevant Experience</label>
+                <textarea
+                  class="form-control"
+                  name="Relevant Experience"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Motivation</label>
+                <textarea
+                  class="form-control"
+                  name="Motivation"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label"
+                  >Attach CV and Supporting Documents (PDF, DOC, ZIP – max 5MB
+                  total)</label
+                >
+                <input
+                  type="file"
+                  class="form-control"
+                  name="Attachments[]"
+                  multiple
+                />
+              </div>
+
+              <button type="submit" class="btn btn-dark">
+                Submit Application
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRAPHIC DESIGNERS -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDesigners">
+          <button
+            class="accordion-button custom-acc-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseDesigners"
+            aria-expanded="false"
+            aria-controls="collapseDesigners"
+          >
+            <span class="acc-arrow"></span>
+            <span class="acc-title">Graphic Designers</span>
+          </button>
+        </h2>
+
+        <div
+          id="collapseDesigners"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingDesigners"
+          data-bs-parent="#vacanciesAccordion"
+        >
+          <div class="accordion-body">
+            <p class="role-heading">Role:</p>
+            <p>
+              Create stunning visual designs for campaigns across parking bays,
+              QR placements, and digital mockups.
+            </p>
+
+            <p class="role-heading">Requirements:</p>
+            <ul>
+              <li>Strong commercial/outdoor design portfolio</li>
+              <li>Proficiency in Adobe Creative Suite</li>
+              <li>Ability to adapt brand CI to high-impact visuals</li>
+              <li>Deadline driven</li>
+            </ul>
+
+            <p class="role-heading">Impact:</p>
+            <p>
+              You’ll shape the national look and feel of our campaigns with
+              visual precision.
+            </p>
+
+            <hr class="my-4" />
+
+            <h5 class="fw-bold mb-3">
+              📝 Application Form – Graphic Designers
+            </h5>
+
+            <!-- DESIGN FORM -->
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="62738014-82f0-47d6-9edb-7026f3c14de5"
+              />
+              <input
+                type="hidden"
+                name="email_to"
+                value="vacancies@logopopads.com"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Logo Pop Ads Careers – Website"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Application – Graphic Designer"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://logopopads.com/vacancies-thank-you.html"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="d-none"
+                style="display: none"
+              />
+
+              <div class="mb-3">
+                <label class="form-label">Full Names</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Full Names"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Surname</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Surname"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contact Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Contact Number"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Province</label>
+                <input type="text" class="form-control" name="Province" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" name="City" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Relevant Experience</label>
+                <textarea
+                  class="form-control"
+                  name="Relevant Experience"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Motivation</label>
+                <textarea
+                  class="form-control"
+                  name="Motivation"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label"
+                  >Attach CV / Portfolio (PDF, DOC, ZIP – max 5MB)</label
+                >
+                <input
+                  type="file"
+                  class="form-control"
+                  name="Attachments[]"
+                  multiple
+                />
+              </div>
+
+              <button type="submit" class="btn btn-dark">
+                Submit Application
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- RUNNERS & INSTALLERS -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingRunners">
+          <button
+            class="accordion-button custom-acc-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseRunners"
+            aria-expanded="false"
+            aria-controls="collapseRunners"
+          >
+            <span class="acc-arrow"></span>
+            <span class="acc-title">Runners & Installers</span>
+          </button>
+        </h2>
+
+        <div
+          id="collapseRunners"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingRunners"
+          data-bs-parent="#vacanciesAccordion"
+        >
+          <div class="accordion-body">
+            <p class="role-heading">Role:</p>
+            <p>
+              Install and maintain advertising materials across properties with
+              precision and professionalism.
+            </p>
+
+            <p class="role-heading">Requirements:</p>
+            <ul>
+              <li>Punctual and detail-oriented</li>
+              <li>Knowledge of print installation & safety</li>
+              <li>Own transport advantageous</li>
+              <li>Hands-on and reliable</li>
+            </ul>
+
+            <p class="role-heading">Impact:</p>
+            <p>Your work brings every campaign to life on-site.</p>
+
+            <hr class="my-4" />
+
+            <h5 class="fw-bold mb-3">
+              📝 Application Form – Runners & Installers
+            </h5>
+
+            <!-- RUNNERS FORM -->
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="62738014-82f0-47d6-9edb-7026f3c14de5"
+              />
+              <input
+                type="hidden"
+                name="email_to"
+                value="vacancies@logopopads.com"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Logo Pop Ads Careers – Website"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Application – Runners & Installers"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://logopopads.com/vacancies-thank-you.html"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="d-none"
+                style="display: none"
+              />
+
+              <div class="mb-3">
+                <label class="form-label">Full Names</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Full Names"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Surname</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Surname"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contact Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Contact Number"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Province</label>
+                <input type="text" class="form-control" name="Province" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">City / Area</label>
+                <input type="text" class="form-control" name="City / Area" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Own Transport?</label>
+                <input type="text" class="form-control" name="Own Transport" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Relevant Experience</label>
+                <textarea
+                  class="form-control"
+                  name="Relevant Experience"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Motivation</label>
+                <textarea
+                  class="form-control"
+                  name="Motivation"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label"
+                  >Attach CV / Supporting Documents (PDF, DOC, ZIP – max
+                  5MB)</label
+                >
+                <input
+                  type="file"
+                  class="form-control"
+                  name="Attachments[]"
+                  multiple
+                />
+              </div>
+
+              <button type="submit" class="btn btn-dark">
+                Submit Application
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADMIN & CLIENT SUPPORT -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingAdmin">
+          <button
+            class="accordion-button custom-acc-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseAdmin"
+            aria-expanded="false"
+            aria-controls="collapseAdmin"
+          >
+            <span class="acc-arrow"></span>
+            <span class="acc-title">Admin & Client Support</span>
+          </button>
+        </h2>
+
+        <div
+          id="collapseAdmin"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingAdmin"
+          data-bs-parent="#vacanciesAccordion"
+        >
+          <div class="accordion-body">
+            <p class="role-heading">Role:</p>
+            <p>
+              Provide administrative and client liaison support across teams.
+            </p>
+
+            <p class="role-heading">Requirements:</p>
+            <ul>
+              <li>Strong communication skills</li>
+              <li>Organized and attentive to detail</li>
+              <li>Admin experience preferred</li>
+              <li>Reliable and proactive</li>
+            </ul>
+
+            <p class="role-heading">Impact:</p>
+            <p>You help keep internal operations flowing smoothly.</p>
+
+            <hr class="my-4" />
+
+            <h5 class="fw-bold mb-3">
+              📝 Application Form – Admin & Client Support
+            </h5>
+
+            <!-- ADMIN FORM -->
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="62738014-82f0-47d6-9edb-7026f3c14de5"
+              />
+              <input
+                type="hidden"
+                name="email_to"
+                value="vacancies@logopopads.com"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Logo Pop Ads Careers – Website"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Application – Admin & Client Support"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://logopopads.com/vacancies-thank-you.html"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="d-none"
+                style="display: none"
+              />
+
+              <div class="mb-3">
+                <label class="form-label">Full Names</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Full Names"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Surname</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Surname"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contact Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Contact Number"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Province</label>
+                <input type="text" class="form-control" name="Province" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" name="City" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Relevant Experience</label>
+                <textarea
+                  class="form-control"
+                  name="Relevant Experience"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Motivation</label>
+                <textarea
+                  class="form-control"
+                  name="Motivation"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label"
+                  >Attach CV / Supporting Documents</label
+                >
+                <input
+                  type="file"
+                  class="form-control"
+                  name="Attachments[]"
+                  multiple
+                />
+              </div>
+
+              <button type="submit" class="btn btn-dark">
+                Submit Application
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARKETING & CONTENT CREATOR -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingMarketing">
+          <button
+            class="accordion-button custom-acc-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseMarketing"
+            aria-expanded="false"
+            aria-controls="collapseMarketing"
+          >
+            <span class="acc-arrow"></span>
+            <span class="acc-title">Marketing & Content Creator</span>
+          </button>
+        </h2>
+
+        <div
+          id="collapseMarketing"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingMarketing"
+          data-bs-parent="#vacanciesAccordion"
+        >
+          <div class="accordion-body">
+            <p class="role-heading">Role:</p>
+            <p>
+              Create content that showcases our brand, campaigns, and
+              Smart-Property network.
+            </p>
+
+            <p class="role-heading">Requirements:</p>
+            <ul>
+              <li>Copywriting ability</li>
+              <li>Experience with content creation</li>
+              <li>Understanding of marketing trends</li>
+              <li>Creative and self-driven</li>
+            </ul>
+
+            <p class="role-heading">Impact:</p>
+            <p>
+              You will help shape the public voice and perception of Logo Pop
+              Ads.
+            </p>
+
+            <hr class="my-4" />
+
+            <h5 class="fw-bold mb-3">
+              📝 Application Form – Marketing & Content Creator
+            </h5>
+
+            <!-- MARKETING FORM -->
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="62738014-82f0-47d6-9edb-7026f3c14de5"
+              />
+              <input
+                type="hidden"
+                name="email_to"
+                value="vacancies@logopopads.com"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Logo Pop Ads Careers – Website"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Application – Marketing & Content Creator"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://logopopads.com/vacancies-thank-you.html"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="d-none"
+                style="display: none"
+              />
+
+              <div class="mb-3">
+                <label class="form-label">Full Names</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Full Names"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Surname</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Surname"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contact Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Contact Number"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Province</label>
+                <input type="text" class="form-control" name="Province" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" name="City" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Relevant Experience</label>
+                <textarea
+                  class="form-control"
+                  name="Relevant Experience"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Motivation</label>
+                <textarea
+                  class="form-control"
+                  name="Motivation"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label"
+                  >Attach CV / Portfolio (PDF, DOC, ZIP – max 5MB)</label
+                >
+                <input
+                  type="file"
+                  class="form-control"
+                  name="Attachments[]"
+                  multiple
+                />
+              </div>
+
+              <button type="submit" class="btn btn-dark">
+                Submit Application
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AFTER YOU APPLY SECTION -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-10 mx-auto">
+            <h2 class="fw-bold mb-3 text-center" data-aos="fade-up">
+              After You Apply
+            </h2>
+
+            <p class="vacancy-intro" data-aos="fade-up" data-aos-delay="100">
+              Once your application is received, our team will review your
+              submission and assess your suitability for the role. If your
+              profile aligns with our current requirements, we will contact you
+              to proceed with the next steps.
+            </p>
+
+            <p class="vacancy-intro" data-aos="fade-up" data-aos-delay="150">
+              Depending on the position, this may include:
+            </p>
+
+            <ul
+              class="vacancy-intro mt-4"
+              role="list"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <li>✅ Phone or video interview</li>
+              <li>✅ In-person meeting or skills assessment</li>
+              <li>✅ Portfolio review (for creative roles)</li>
+              <li>✅ On-site walkthrough (for installation roles)</li>
+            </ul>
+
+            <p
+              class="vacancy-intro mb-0"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              Successful candidates will receive an official offer and full
+              onboarding support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BE PART OF SOMETHING BIGGER -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <!-- Heading row -->
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="fw-bold">Be Part of Something Bigger</h2>
+          </div>
+        </div>
+
+        <!-- Image + text row -->
+        <div class="row g-4 align-items-center">
+          <!-- Image column -->
+          <div
+            class="col-lg-6 order-lg-1 order-1 text-center"
+            data-aos="zoom-in-right"
+          >
+            <img
+              src="/img/Vacancies_03.webp"
+              alt="Join Logo Pop Ads"
+              class="section-img"
+            />
+          </div>
+
+          <!-- Text column -->
+          <div class="col-lg-6 order-lg-2 order-2" data-aos="fade-left">
+            <p class="vacancy-intro" data-aos="fade-left" data-aos-delay="100">
+              At <strong>LOGO POP ADS</strong>, you're not just taking a job —
+              you're becoming part of a national transformation. We're
+              pioneering South Africa’s first Smart-Property advertising
+              network, connecting communities, properties and brands in a way
+              that’s never been done before.
+            </p>
+
+            <p
+              class="vacancy-intro mb-0"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
+              Whether you're a creative, a marketer, a strategist, or a hands-on
+              operator, your contribution helps shape a growing movement. This
+              is your chance to help build something meaningful, modern, and
+              future-focused.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY DIRECTLY SECTION -->
+    <section class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-3" data-aos="fade-up">
+          Prefer to Apply Directly?
+        </h2>
+
+        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+          You can also send your CV, supporting documents, and the role you're
+          applying for directly to:
+        </p>
+
+        <h3 class="fw-bold" data-aos="fade-up" data-aos-delay="150">
+          <a href="mailto:vacancies@logopopads.com" class="text-warning">
+            vacancies@logopopads.com
+          </a>
+        </h3>
+
+        <p
+          class="mt-4 mb-0 vacancy-intro"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Please include the job title in the subject line.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div data-include="/footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo Pop Ads - Home</title>
+
+    <!-- Styles & Frameworks -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      body {
+        scroll-behavior: smooth;
+        overflow-x: hidden; /* Prevent sideways scrolling */
+      }
+
+      .card img {
+        transition: transform 0.3s;
+      }
+      .card:hover img {
+        transform: scale(1.05);
+      }
+
+      .section-img {
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /* MOBILE FIXES */
+      @media (max-width: 768px) {
+        #hero h1 {
+          font-size: 2rem !important;
+        }
+
+        #hero p.lead {
+          font-size: 1rem !important;
+        }
+
+        section {
+          padding-top: 2.5rem !important;
+          padding-bottom: 2.5rem !important;
+        }
+
+        .card-body img {
+          height: auto !important;
+          width: 100% !important;
+        }
+
+        .row.align-items-center {
+          text-align: center;
+        }
+
+        .row.align-items-center > div {
+          margin-bottom: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div data-include="navbar.html"></div>
+
+    <!-- HERO SECTION -->
+    <section class="bg-dark text-white text-center py-5" id="hero">
+      <div class="container">
+        <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">
+          Leaders of Interactive Advertising
+        </h1>
+        <p
+          class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          Transforming streets, malls & parking lots into powerful ad spaces.
+        </p>
+        <a
+          href="brands.html"
+          class="btn btn-warning btn-lg mt-4 animate__animated animate__fadeInUp animate__delay-2s"
+        >
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <!-- IMAGE SECTION 1: 01A_Index.webp -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Text column -->
+          <div class="col-md-6 order-md-1 order-2" data-aos="fade-right">
+            <h3 class="fw-bold">Back to Real Spaces</h3>
+            <p class="lead">
+              Built on creativity, technology, and vision, we connect brands,
+              properties, and people in scalable, smart, and proudly South
+              African ways by utilizing QR-powered technology to build
+              interactions; making every branded space become a direct gateway
+              between consumers and the experiences they value. In a world
+              oversaturated with digital noise, LOGO POP ADS brings brands back
+              to the real world as we create physical moments that capture
+              attention and forge measurable connections.
+            </p>
+          </div>
+
+          <!-- Image column -->
+          <div
+            class="col-md-6 order-md-2 order-1 text-center"
+            data-aos="zoom-in-left"
+          >
+            <img
+              src="img/01A_Index.webp"
+              alt="Real world ad example"
+              class="section-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE SECTION 2: 01B_Index.webp -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Image column -->
+          <div class="col-md-6 order-md-1 order-1">
+            <img
+              src="img/01B_Index.webp"
+              alt="Interactive parking ads"
+              class="section-img"
+            />
+          </div>
+
+          <!-- Text column -->
+          <div class="col-md-6 order-md-2 order-2">
+            <h3 class="fw-bold">Engagement That Moves</h3>
+            <p class="lead">
+              Our branded spaces exceed passive visibility because they get
+              scanned, shared, and become remembered experiences, transforming
+              every interaction into a measurable data point. This seamless
+              connectivity allows people to engage meaningfully with their
+              favourite brands as they unlock direct value through campaigns,
+              rewards, and competitions. For property owners, every activated
+              space becomes a high-value touchpoint that enhances foot traffic,
+              enriches the visitor experience, and unlocks new revenue streams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE CATEGORIES -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h3 class="text-center fw-bold mb-5">
+          Designed for Everyone in the Loop
+        </h3>
+        <div class="row text-center g-4">
+          <div class="col-12 col-md-4" id="brands">
+            <div class="card h-100 shadow border-0" data-aos="fade-up">
+              <div class="card-body">
+                <img
+                  src="img/02A_Brands.webp"
+                  height="150"
+                  class="mb-3"
+                  alt="Brands"
+                />
+                <h5 class="card-title">For Brands</h5>
+                <p class="card-text">
+                  Activate your audience through direct, data-driven
+                  interaction, ensuring campaigns don’t just reach people, they
+                  involve them.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" id="property">
+            <div
+              class="card h-100 shadow border-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card-body">
+                <img
+                  src="img/03A_Property_Owners.webp"
+                  height="150"
+                  class="mb-3"
+                  alt="Property Owners"
+                />
+                <h5 class="card-title">For Property Owners</h5>
+                <p class="card-text">
+                  Monetize your physical footprint with interactive placements
+                  that engage and inform, transforming every square meter into a
+                  sophisticated channel for passive income.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" id="communities">
+            <div
+              class="card h-100 shadow border-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card-body">
+                <img
+                  src="img/06A_Public_Education.webp"
+                  height="150"
+                  class="mb-3"
+                  alt="Communities"
+                />
+                <h5 class="card-title">For Users</h5>
+                <p class="card-text">
+                  Scan, play, and earn rewards, all from your phone. That will
+                  redefine your experience to allow advertising to give
+                  something back.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-warning text-dark text-center">
+      <div class="container">
+        <h4 class="mb-3">Ready to Pop Your Brand?</h4>
+        <a href="contact.html" class="btn btn-dark btn-lg">Contact Us Now</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div data-include="footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
