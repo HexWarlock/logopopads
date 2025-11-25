@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>New Application</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        color: #212529;
+        margin: 0;
+        padding: 0;
+      }
+      .email-wrapper {
+        max-width: 640px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 24px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+      }
+      .logo {
+        width: 160px;
+        margin-bottom: 20px;
+      }
+      .header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        color: #000;
+      }
+      .section-label {
+        font-weight: 600;
+        color: #343a40;
+        margin-top: 12px;
+      }
+      .section-content {
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <a href="https://logopopads.com">
+        <img
+          class="logo"
+          src="https://logopopads.com/img/logo.webp"
+          alt="Logo Pop Ads Logo"
+        />
+      </a>
+      <div class="header">New Job Application Received</div>
+
+      <div class="section-content">
+        <span class="section-label">Job Title:</span><br />{{job_title}}
+      </div>
+      <div class="section-content">
+        <span class="section-label">Full Name:</span><br />{{fullname}}
+        {{surname}}
+      </div>
+      <div class="section-content">
+        <span class="section-label">Email:</span><br />{{email}}
+      </div>
+      <div class="section-content">
+        <span class="section-label">Phone:</span><br />{{phone}}
+      </div>
+      <div class="section-content">
+        <span class="section-label">Province:</span><br />{{province}}
+      </div>
+      <div class="section-content">
+        <span class="section-label">City:</span><br />{{city}}
+      </div>
+
+      <div class="section-content">
+        <span class="section-label">Relevant Experience:</span
+        ><br />{{experience}}
+      </div>
+      <div class="section-content">
+        <span class="section-label">Motivation:</span><br />{{motivation}}
+      </div>
+    </div>
+  </body>
+</html>

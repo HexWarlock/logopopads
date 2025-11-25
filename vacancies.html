@@ -247,40 +247,15 @@
 
             <!-- SALES FORM -->
             <form
-              action="https://api.web3forms.com/submit"
+              action="/vacancies-api/apply"
               method="POST"
               enctype="multipart/form-data"
             >
+              <!-- Job title (important for backend) -->
               <input
                 type="hidden"
-                name="access_key"
-                value="62738014-82f0-47d6-9edb-7026f3c14de5"
-              />
-              <input
-                type="hidden"
-                name="email_to"
-                value="vacancies@logopopads.com"
-              />
-              <input
-                type="hidden"
-                name="from_name"
-                value="Logo Pop Ads Careers – Website"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="New Application – Sales Team"
-              />
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://logopopads.com/vacancies-thank-you.html"
-              />
-              <input
-                type="checkbox"
-                name="botcheck"
-                class="d-none"
-                style="display: none"
+                name="job_title"
+                value="Sales Team – Property & Brand Partnerships"
               />
 
               <div class="mb-3">
@@ -288,7 +263,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Full Names"
+                  name="fullname"
                   required
                 />
               </div>
@@ -298,19 +273,14 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Surname"
+                  name="surname"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Contact Number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="Contact Number"
-                  required
-                />
+                <input type="text" class="form-control" name="phone" required />
               </div>
 
               <div class="mb-3">
@@ -318,27 +288,33 @@
                 <input
                   type="email"
                   class="form-control"
-                  name="Email Address"
+                  name="email"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Province</label>
-                <input type="text" class="form-control" name="Province" />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="province"
+                  required
+                />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">City</label>
-                <input type="text" class="form-control" name="City" />
+                <input type="text" class="form-control" name="city" required />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Relevant Experience</label>
                 <textarea
                   class="form-control"
-                  name="Relevant Experience"
+                  name="experience"
                   rows="3"
+                  required
                 ></textarea>
               </div>
 
@@ -346,21 +322,24 @@
                 <label class="form-label">Motivation</label>
                 <textarea
                   class="form-control"
-                  name="Motivation"
+                  name="motivation"
                   rows="4"
+                  required
                 ></textarea>
               </div>
 
               <div class="mb-3">
                 <label class="form-label"
-                  >Attach CV and Supporting Documents (PDF, DOC, ZIP – max 5MB
-                  total)</label
+                  >Attach CV + Supporting Documents (PDF, DOC, DOCX, ZIP, JPG,
+                  JPEG, PNG)</label
                 >
                 <input
                   type="file"
                   class="form-control"
-                  name="Attachments[]"
+                  name="attachments"
+                  accept=".pdf,.doc,.docx,.zip,.jpg,.jpeg,.png"
                   multiple
+                  required
                 />
               </div>
 
@@ -423,48 +402,18 @@
 
             <!-- DESIGN FORM -->
             <form
-              action="https://api.web3forms.com/submit"
+              action="/vacancies-api/apply"
               method="POST"
               enctype="multipart/form-data"
             >
-              <input
-                type="hidden"
-                name="access_key"
-                value="62738014-82f0-47d6-9edb-7026f3c14de5"
-              />
-              <input
-                type="hidden"
-                name="email_to"
-                value="vacancies@logopopads.com"
-              />
-              <input
-                type="hidden"
-                name="from_name"
-                value="Logo Pop Ads Careers – Website"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="New Application – Graphic Designer"
-              />
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://logopopads.com/vacancies-thank-you.html"
-              />
-              <input
-                type="checkbox"
-                name="botcheck"
-                class="d-none"
-                style="display: none"
-              />
+              <input type="hidden" name="job_title" value="Graphic Designers" />
 
               <div class="mb-3">
                 <label class="form-label">Full Names</label>
                 <input
                   type="text"
                   class="form-control"
-                  name="Full Names"
+                  name="fullname"
                   required
                 />
               </div>
@@ -474,19 +423,14 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Surname"
+                  name="surname"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Contact Number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="Contact Number"
-                  required
-                />
+                <input type="text" class="form-control" name="phone" required />
               </div>
 
               <div class="mb-3">
@@ -494,27 +438,33 @@
                 <input
                   type="email"
                   class="form-control"
-                  name="Email Address"
+                  name="email"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Province</label>
-                <input type="text" class="form-control" name="Province" />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="province"
+                  required
+                />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">City</label>
-                <input type="text" class="form-control" name="City" />
+                <input type="text" class="form-control" name="city" required />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Relevant Experience</label>
                 <textarea
                   class="form-control"
-                  name="Relevant Experience"
+                  name="experience"
                   rows="3"
+                  required
                 ></textarea>
               </div>
 
@@ -522,20 +472,22 @@
                 <label class="form-label">Motivation</label>
                 <textarea
                   class="form-control"
-                  name="Motivation"
+                  name="motivation"
                   rows="4"
+                  required
                 ></textarea>
               </div>
 
               <div class="mb-3">
                 <label class="form-label"
-                  >Attach CV / Portfolio (PDF, DOC, ZIP – max 5MB)</label
+                  >Attach CV / Portfolio (PDF, DOC, ZIP)</label
                 >
                 <input
                   type="file"
                   class="form-control"
-                  name="Attachments[]"
+                  name="attachments"
                   multiple
+                  required
                 />
               </div>
 
@@ -595,40 +547,14 @@
 
             <!-- RUNNERS FORM -->
             <form
-              action="https://api.web3forms.com/submit"
+              action="/vacancies-api/apply"
               method="POST"
               enctype="multipart/form-data"
             >
               <input
                 type="hidden"
-                name="access_key"
-                value="62738014-82f0-47d6-9edb-7026f3c14de5"
-              />
-              <input
-                type="hidden"
-                name="email_to"
-                value="vacancies@logopopads.com"
-              />
-              <input
-                type="hidden"
-                name="from_name"
-                value="Logo Pop Ads Careers – Website"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="New Application – Runners & Installers"
-              />
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://logopopads.com/vacancies-thank-you.html"
-              />
-              <input
-                type="checkbox"
-                name="botcheck"
-                class="d-none"
-                style="display: none"
+                name="job_title"
+                value="Runners & Installers"
               />
 
               <div class="mb-3">
@@ -636,7 +562,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Full Names"
+                  name="fullname"
                   required
                 />
               </div>
@@ -646,19 +572,14 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Surname"
+                  name="surname"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Contact Number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="Contact Number"
-                  required
-                />
+                <input type="text" class="form-control" name="phone" required />
               </div>
 
               <div class="mb-3">
@@ -666,32 +587,33 @@
                 <input
                   type="email"
                   class="form-control"
-                  name="Email Address"
+                  name="email"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Province</label>
-                <input type="text" class="form-control" name="Province" />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="province"
+                  required
+                />
               </div>
 
               <div class="mb-3">
-                <label class="form-label">City / Area</label>
-                <input type="text" class="form-control" name="City / Area" />
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label">Own Transport?</label>
-                <input type="text" class="form-control" name="Own Transport" />
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" name="city" required />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Relevant Experience</label>
                 <textarea
                   class="form-control"
-                  name="Relevant Experience"
+                  name="experience"
                   rows="3"
+                  required
                 ></textarea>
               </div>
 
@@ -699,21 +621,22 @@
                 <label class="form-label">Motivation</label>
                 <textarea
                   class="form-control"
-                  name="Motivation"
+                  name="motivation"
                   rows="4"
+                  required
                 ></textarea>
               </div>
 
               <div class="mb-3">
                 <label class="form-label"
-                  >Attach CV / Supporting Documents (PDF, DOC, ZIP – max
-                  5MB)</label
+                  >Attach CV / Portfolio (PDF, DOC, ZIP)</label
                 >
                 <input
                   type="file"
                   class="form-control"
-                  name="Attachments[]"
+                  name="attachments"
                   multiple
+                  required
                 />
               </div>
 
@@ -772,40 +695,14 @@
 
             <!-- ADMIN FORM -->
             <form
-              action="https://api.web3forms.com/submit"
+              action="/vacancies-api/apply"
               method="POST"
               enctype="multipart/form-data"
             >
               <input
                 type="hidden"
-                name="access_key"
-                value="62738014-82f0-47d6-9edb-7026f3c14de5"
-              />
-              <input
-                type="hidden"
-                name="email_to"
-                value="vacancies@logopopads.com"
-              />
-              <input
-                type="hidden"
-                name="from_name"
-                value="Logo Pop Ads Careers – Website"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="New Application – Admin & Client Support"
-              />
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://logopopads.com/vacancies-thank-you.html"
-              />
-              <input
-                type="checkbox"
-                name="botcheck"
-                class="d-none"
-                style="display: none"
+                name="job_title"
+                value="Admin & Client Support"
               />
 
               <div class="mb-3">
@@ -813,7 +710,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Full Names"
+                  name="fullname"
                   required
                 />
               </div>
@@ -823,19 +720,14 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Surname"
+                  name="surname"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Contact Number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="Contact Number"
-                  required
-                />
+                <input type="text" class="form-control" name="phone" required />
               </div>
 
               <div class="mb-3">
@@ -843,27 +735,33 @@
                 <input
                   type="email"
                   class="form-control"
-                  name="Email Address"
+                  name="email"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Province</label>
-                <input type="text" class="form-control" name="Province" />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="province"
+                  required
+                />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">City</label>
-                <input type="text" class="form-control" name="City" />
+                <input type="text" class="form-control" name="city" required />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Relevant Experience</label>
                 <textarea
                   class="form-control"
-                  name="Relevant Experience"
+                  name="experience"
                   rows="3"
+                  required
                 ></textarea>
               </div>
 
@@ -871,20 +769,22 @@
                 <label class="form-label">Motivation</label>
                 <textarea
                   class="form-control"
-                  name="Motivation"
+                  name="motivation"
                   rows="4"
+                  required
                 ></textarea>
               </div>
 
               <div class="mb-3">
                 <label class="form-label"
-                  >Attach CV / Supporting Documents</label
+                  >Attach CV / Portfolio (PDF, DOC, ZIP)</label
                 >
                 <input
                   type="file"
                   class="form-control"
-                  name="Attachments[]"
+                  name="attachments"
                   multiple
+                  required
                 />
               </div>
 
@@ -947,40 +847,14 @@
 
             <!-- MARKETING FORM -->
             <form
-              action="https://api.web3forms.com/submit"
+              action="/vacancies-api/apply"
               method="POST"
               enctype="multipart/form-data"
             >
               <input
                 type="hidden"
-                name="access_key"
-                value="62738014-82f0-47d6-9edb-7026f3c14de5"
-              />
-              <input
-                type="hidden"
-                name="email_to"
-                value="vacancies@logopopads.com"
-              />
-              <input
-                type="hidden"
-                name="from_name"
-                value="Logo Pop Ads Careers – Website"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="New Application – Marketing & Content Creator"
-              />
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://logopopads.com/vacancies-thank-you.html"
-              />
-              <input
-                type="checkbox"
-                name="botcheck"
-                class="d-none"
-                style="display: none"
+                name="job_title"
+                value="Marketing & Content Creator"
               />
 
               <div class="mb-3">
@@ -988,7 +862,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Full Names"
+                  name="fullname"
                   required
                 />
               </div>
@@ -998,19 +872,14 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="Surname"
+                  name="surname"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Contact Number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="Contact Number"
-                  required
-                />
+                <input type="text" class="form-control" name="phone" required />
               </div>
 
               <div class="mb-3">
@@ -1018,27 +887,33 @@
                 <input
                   type="email"
                   class="form-control"
-                  name="Email Address"
+                  name="email"
                   required
                 />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Province</label>
-                <input type="text" class="form-control" name="Province" />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="province"
+                  required
+                />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">City</label>
-                <input type="text" class="form-control" name="City" />
+                <input type="text" class="form-control" name="city" required />
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Relevant Experience</label>
                 <textarea
                   class="form-control"
-                  name="Relevant Experience"
+                  name="experience"
                   rows="3"
+                  required
                 ></textarea>
               </div>
 
@@ -1046,20 +921,22 @@
                 <label class="form-label">Motivation</label>
                 <textarea
                   class="form-control"
-                  name="Motivation"
+                  name="motivation"
                   rows="4"
+                  required
                 ></textarea>
               </div>
 
               <div class="mb-3">
                 <label class="form-label"
-                  >Attach CV / Portfolio (PDF, DOC, ZIP – max 5MB)</label
+                  >Attach CV / Portfolio (PDF, DOC, ZIP)</label
                 >
                 <input
                   type="file"
                   class="form-control"
-                  name="Attachments[]"
+                  name="attachments"
                   multiple
+                  required
                 />
               </div>
 
