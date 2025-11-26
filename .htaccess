@@ -1,9 +1,0 @@
-RewriteEngine On
-
-# Forward /apply POST requests to Node app via internal proxy
-RewriteCond %{REQUEST_METHOD} POST
-RewriteRule ^apply$ http://127.0.0.1:PORT/apply [P,L]
-
-# Optionally: protect GET /apply from showing the “It works” screen
-RewriteCond %{REQUEST_METHOD} GET
-RewriteRule ^apply$ / [R=302,L]
