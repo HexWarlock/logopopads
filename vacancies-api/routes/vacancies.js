@@ -6,6 +6,10 @@ const nodemailer = require("nodemailer");
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+  res.send(">>> Vacancies API is running — from router");
+});
+
 // Ensure uploads folder exists
 const uploadDir = path.join(__dirname, "..", "uploads");
 if (!fs.existsSync(uploadDir)) {
@@ -47,6 +51,7 @@ const upload = multer({ storage, fileFilter });
 
 // POST /apply
 router.post("/apply", upload.array("attachments", 10), async (req, res) => {
+  console.log(">>> Received application:", req.body);
   try {
     const {
       fullname,
