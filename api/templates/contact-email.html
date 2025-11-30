@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>New Contact Message</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    "
+  >
+    <div
+      style="
+        max-width: 600px;
+        margin: auto;
+        background-color: #fff;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      "
+    >
+      <div style="text-align: center">
+        <img
+          src="https://logopopads.com/img/logo-pop.webp"
+          alt="Logo Pop Ads"
+          style="max-width: 150px; margin-bottom: 20px"
+        />
+      </div>
+
+      <h2 style="color: #1c1c1c">You've received a new message</h2>
+
+      <p><strong>Name:</strong> {{name}}</p>
+      <p><strong>Email:</strong> {{email}}</p>
+      <p><strong>Phone:</strong> {{phone}}</p>
+      <p><strong>Subject:</strong> {{subject}}</p>
+      <hr style="margin: 20px 0" />
+      <p><strong>Message:</strong></p>
+      <p style="white-space: pre-wrap">{{message}}</p>
+
+      <hr style="margin-top: 30px" />
+      <p style="font-size: 12px; color: #888">
+        This message was sent via the Contact Us form on
+        <a href="https://logopopads.com">logopopads.com</a>
+      </p>
+    </div>
+  </body>
+</html>

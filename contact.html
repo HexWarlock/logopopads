@@ -64,38 +64,18 @@
           <!-- Form -->
           <div class="col-md-6" data-aos="fade-left">
             <h3 class="fw-bold mb-4">Send Us a Message</h3>
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <!-- Required Web3Forms Access Key -->
+            <form
+              action="https://logopopads.com/contact"
+              method="POST"
+              enctype="application/x-www-form-urlencoded"
+            >
+              <!-- Honeypot (spam trap) -->
               <input
-                type="hidden"
-                name="access_key"
-                value="62738014-82f0-47d6-9edb-7026f3c14de5"
-              />
-
-              <!-- Email destination -->
-              <input
-                type="hidden"
-                name="email_to"
-                value="info@logopopads.com"
-              />
-
-              <!-- Optional but recommended -->
-              <input
-                type="hidden"
-                name="from_name"
-                value="Logo Pop Ads Website"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="New Contact Form Submission from LogoPopAds.com"
-              />
-
-              <!-- Redirect after submission -->
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://logopopads.com/contact-us-thank-you.html"
+                type="text"
+                name="fax_number"
+                style="display: none"
+                tabindex="-1"
+                autocomplete="off"
               />
 
               <div class="mb-3">
@@ -123,6 +103,29 @@
               </div>
 
               <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="Optional"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject of your message"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
                 <label for="message" class="form-label">Your Message</label>
                 <textarea
                   class="form-control"
@@ -132,6 +135,20 @@
                   rows="5"
                   required
                 ></textarea>
+              </div>
+
+              <!-- Checkbox to CC sender -->
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="ccMe"
+                  name="cc_me"
+                  value="yes"
+                />
+                <label class="form-check-label" for="ccMe">
+                  Send me a copy of this message
+                </label>
               </div>
 
               <button type="submit" class="btn btn-dark px-4 py-2">

@@ -12,9 +12,13 @@ app.use(express.json());
 // Serve static files (if needed)
 app.use(express.static(path.join(__dirname, ".."))); // or just __dirname if serving from vacancies-api
 
-// Mount router
+// Mount vacancies router
 const vacanciesRouter = require("./routes/vacancies");
-app.use("/vacancies-api", vacanciesRouter);
+app.use("/", vacanciesRouter);
+
+// Mount contact router
+const contactRouter = require("./routes/contact");
+app.use("/", contactRouter);
 
 // Start server
 app.listen(PORT, () => {

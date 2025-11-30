@@ -51,7 +51,6 @@ const upload = multer({ storage, fileFilter });
 
 // POST /apply
 router.post("/apply", upload.array("attachments", 10), async (req, res) => {
-  console.log(">>> Received application:", req.body);
   try {
     const {
       fullname,
